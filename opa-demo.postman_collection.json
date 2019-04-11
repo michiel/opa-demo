@@ -1,0 +1,935 @@
+{
+	"info": {
+		"_postman_id": "06535d0c-3e34-4439-9041-2b0a754ffba9",
+		"name": "opa-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alice GET /salary/alice",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "alice",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/finance/salary/alice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"finance",
+						"salary",
+						"alice"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		},
+		{
+			"name": "Alice GET /salary/bob",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "alice",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/finance/salary/bob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"finance",
+						"salary",
+						"bob"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		},
+		{
+			"name": "Bob GET /salary/alice",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bob",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/finance/salary/alice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"finance",
+						"salary",
+						"alice"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		},
+		{
+			"name": "Bob GET /salary/bob",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bob",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/finance/salary/bob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"finance",
+						"salary",
+						"bob"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		},
+		{
+			"name": "Bob GET /salary/david",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bob",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/finance/salary/david",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"finance",
+						"salary",
+						"david"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		},
+		{
+			"name": "PUT Policy v1.0.0",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "package httpapi.authz\n\n# bob is alice's manager, and betty is charlie's.\nsubordinates = {\"alice\": [], \"charlie\": [], \"bob\": [\"alice\"], \"betty\": [\"charlie\"]}\n\n# HTTP API request\nimport input\n\ndefault allow = false\n\n# Allow users to get their own salaries.\nallow {\n  input.method == \"GET\"\n  input.path = [\"finance\", \"salary\", username]\n  input.user == username\n}\n\n# Allow managers to get their subordinates' salaries.\nallow {\n  input.method == \"GET\"\n  input.path = [\"finance\", \"salary\", username]\n  subordinates[input.user][_] == username\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/v1/policies/example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"v1",
+						"policies",
+						"example"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET List of policies",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "package httpapi.authz\n\n# bob is alice's manager, and betty is charlie's.\nsubordinates = {\"alice\": [], \"charlie\": [], \"bob\": [\"alice\"], \"betty\": [\"charlie\"]}\n\n# HTTP API request\nimport input\n\ndefault allow = false\n\n# Allow users to get their own salaries.\nallow {\n  input.method == \"GET\"\n  input.path = [\"finance\", \"salary\", username]\n  input.user == username\n}\n\n# Allow managers to get their subordinates' salaries.\nallow {\n  input.method == \"GET\"\n  input.path = [\"finance\", \"salary\", username]\n  subordinates[input.user][_] == username\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/v1/policies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"v1",
+						"policies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Policy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Policy v1.0.0 for HR",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "package httpapi.authz\n\nimport input\n\n# Allow HR members to get anyone's salary.\nallow {\n  input.method == \"GET\"\n  input.path = [\"finance\", \"salary\", _]\n  input.user == hr[_]\n}\n\n# David is the only member of HR.\nhr = [\n  \"david\",\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8181/v1/policies/example-hr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"v1",
+						"policies",
+						"example-hr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "David (HR) GET /salary/david",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "david",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/finance/salary/david",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"finance",
+						"salary",
+						"david"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		},
+		{
+			"name": "David (HR) GET /salary/bob",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "david",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/finance/salary/bob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"finance",
+						"salary",
+						"bob"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		},
+		{
+			"name": "Partial Eval - PUT Policy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "david",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "package example\n\nallow {\n  input.subject.clearance_level >= data.reports[_].clearance_level\n}\n\nallow {\n  data.break_glass = true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/v1/policies/partialdemo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"v1",
+						"policies",
+						"partialdemo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		},
+		{
+			"name": "Partial Eval - Compile query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "david",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": \"data.example.allow == true\",\n  \"input\": {\n    \"subject\": {\n      \"clearance_level\": 4\n    }\n  },\n  \"unknowns\": [\n    \"data.reports\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/v1/compile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"v1",
+						"compile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bob GET /",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "291"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.12.2 Python/2.7.13"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Apr 2019 04:06:33 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>"
+				}
+			]
+		}
+	]
+}
